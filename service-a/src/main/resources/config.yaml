@@ -1,0 +1,15 @@
+kumuluzee:
+  name: orchestrator
+  version: 1.0-SNAPSHOT
+  env:
+    name: dev
+  metrics:
+    web-instrumentation:
+      - name: testEndpoint
+        url-pattern: data/hello/*
+  server:
+    http:
+      port: 8083
+injected:
+  value: Injected value
+value: lookup value
